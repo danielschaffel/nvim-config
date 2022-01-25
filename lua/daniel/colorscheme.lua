@@ -10,6 +10,7 @@ vim.g.gruvbox_contrast_dark = 'hard'
 
 -- Set opening screen theme to gruvbox
 vim.guibg=gruvbox
+vim.guifg=gruvbox
 
 -- vim.ctermbg=0
 

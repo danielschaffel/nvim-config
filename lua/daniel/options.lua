@@ -23,6 +23,7 @@ local options = {
 	-- colorcolumn = 80,
 	background = "dark",
 	spell = true,
+    swapfile=false,
 }
 
 vim.opt.shortmess:append "c"

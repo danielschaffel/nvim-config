@@ -38,7 +38,7 @@ packer.init {
   },
 }
 
--- Install your plugins here
+-- Install your plugins herelsp
 return packer.startup(function(use)
   -- My plugins here
   use "wbthomason/packer.nvim" -- Have packer manage itself
@@ -62,6 +62,7 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig"
   use "williamboman/nvim-lsp-installer"
+  use "jose-elias-alvarez/null-ls.nvim"
 
   use "nvim-telescope/telescope.nvim"
 
@@ -69,6 +70,7 @@ return packer.startup(function(use)
       "nvim-treesitter/nvim-treesitter",
       run = ":TSUpdate",
   }
+  use "p00f/nvim-ts-rainbow"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

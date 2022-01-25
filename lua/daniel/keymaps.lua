@@ -11,3 +11,5 @@ vim.g.maplocalleader = " "
 keymap("n", "<C-p>", "<cmd>lua require('telescope.builtin').git_files()<CR>", {})
 keymap("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<CR>", {})
 keymap("n", "<leader>lg", "<cmd>lua require('telescope.builtin').live_grep()<CR>", {})
+
+keymap("n", "<leader>f", ":Format<CR>", {})
