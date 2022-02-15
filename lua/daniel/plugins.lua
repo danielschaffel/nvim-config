@@ -65,6 +65,9 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim"
 
   use "nvim-telescope/telescope.nvim"
+  use "ThePrimeagen/harpoon"
+
+  use "tpope/vim-fugitive"
 
   use {
       "nvim-treesitter/nvim-treesitter",

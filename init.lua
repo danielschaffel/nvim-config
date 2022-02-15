@@ -5,5 +5,7 @@ require "daniel.keymaps"
 require "daniel.plugins"
 require "daniel.cmp"
 require "daniel.treesitter"
+require "daniel.telescope"
+require "daniel.harpoon"
 require "daniel.colorscheme"
 
