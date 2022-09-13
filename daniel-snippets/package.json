@@ -1,0 +1,11 @@
+{
+    "name": "daniel_snips",
+    "contributes": {
+        "snippets": [
+            {
+                "language": ["all"],
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

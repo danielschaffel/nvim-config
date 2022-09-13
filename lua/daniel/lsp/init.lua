@@ -41,5 +41,6 @@ require("lspconfig").sumneko_lua.setup(config(require("daniel.lsp.settings.sumne
 require("lspconfig").tsserver.setup(config())
 require("lspconfig").svelte.setup(config())
 require("lspconfig").dockerls.setup(config())
+require("lspconfig").jsonls.setup(config())
 require "daniel.lsp.null-ls"
 
