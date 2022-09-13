@@ -47,6 +47,12 @@ return packer.startup(function(use)
 
   use "gruvbox-community/gruvbox"
 
+  -- RipGrep
+  use "jremmen/vim-ripgrep"
+
+  -- FuGitive
+  use "tpope/vim-fugitive"
+
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -61,19 +67,21 @@ return packer.startup(function(use)
 
   -- LSP
   use "neovim/nvim-lspconfig"
-  use "williamboman/nvim-lsp-installer"
+  use "williamboman/mason-lspconfig.nvim"
+  use "williamboman/mason.nvim"
   use "jose-elias-alvarez/null-ls.nvim"
 
   use "nvim-telescope/telescope.nvim"
   use "ThePrimeagen/harpoon"
 
-  use "tpope/vim-fugitive"
 
   use {
       "nvim-treesitter/nvim-treesitter",
       run = ":TSUpdate",
   }
   use "p00f/nvim-ts-rainbow"
+
+  use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
