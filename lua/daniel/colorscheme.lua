@@ -1,4 +1,5 @@
-local colorscheme = "gruvbox"
+-- local colorscheme = "gruvbox"
+local colorscheme = "monokai"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
@@ -9,8 +10,8 @@ end
 vim.g.gruvbox_contrast_dark = 'hard'
 
 -- Set opening screen theme to gruvbox
-vim.guibg=gruvbox
-vim.guifg=gruvbox
+vim.guibg=colorscheme
+vim.guifg=colorscheme
 
 -- vim.ctermbg=0
 

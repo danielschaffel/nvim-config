@@ -46,7 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
   use "gruvbox-community/gruvbox"
-
+  use 'tanvirtin/monokai.nvim'
   -- RipGrep
   use "jremmen/vim-ripgrep"
 
