@@ -5,6 +5,10 @@
             {
                 "language": ["all"],
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": ["python"],
+                "path": "./snippets/python.json"
             }
         ]
     }
