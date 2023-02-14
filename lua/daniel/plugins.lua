@@ -45,8 +45,11 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
+  -- Colorschemes
   use "gruvbox-community/gruvbox"
   use 'tanvirtin/monokai.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
+
   -- RipGrep
   use "jremmen/vim-ripgrep"
 
@@ -80,6 +83,7 @@ return packer.startup(function(use)
       run = ":TSUpdate",
   }
   use "p00f/nvim-ts-rainbow"
+  use "nvim-treesitter/nvim-treesitter-context"
 
   use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
   -- Automatically set up your configuration after cloning packer.nvim

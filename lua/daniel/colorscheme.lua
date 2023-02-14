@@ -1,5 +1,8 @@
+-- local colorscheme = require("monokai").setup{}
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
+
 -- local colorscheme = "gruvbox"
-local colorscheme = "monokai"
+local colorscheme = "catppuccin"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
@@ -7,12 +10,15 @@ if not status_ok then
   return
 end
 
-vim.g.gruvbox_contrast_dark = 'hard'
+vim.g.gruvbox_contrast_dark = 'soft'
 
 -- Set opening screen theme to gruvbox
 vim.guibg=colorscheme
 vim.guifg=colorscheme
 
 -- vim.ctermbg=0
+-- 
+vim.highlight.ColorColumn = true
 
--- vim.highlight.ColorColumn = true
+vim.api.nvim_set_hl(0, "Normal", {bg = "none"})
+vim.api.nvim_set_hl(0, "NormalFloat", {bg = "none"})

@@ -42,5 +42,14 @@ require("lspconfig").tsserver.setup(config())
 require("lspconfig").svelte.setup(config())
 require("lspconfig").dockerls.setup(config())
 require("lspconfig").jsonls.setup(config())
-require "daniel.lsp.null-ls"
+require("lspconfig").html.setup(config())
+require("lspconfig").cssls.setup(config())
+require("lspconfig").rust_analyzer.setup(config())
+require("lspconfig").bashls.setup(config())
+require("lspconfig").gopls.setup(config())
+require("lspconfig").gopls.setup(config())
+require("lspconfig").tailwindcss.setup(config())
+-- require("lspconfig").cpptools.setup(config())
+--
+-- require "daniel.lsp.null-ls"
 
