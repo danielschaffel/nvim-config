@@ -16,7 +16,7 @@ local function config(_config)
 			vim.keymap.set("n","<leader>vd", function() vim.diagnostic.open_float() end)
 			vim.keymap.set("n","[d", function() vim.diagnostic.goto_next() end)
 			vim.keymap.set("n","]d", function() vim.diagnostic.goto_prev() end)
-			vim.keymap.set("n","<leader>vca", function() vim.lsp.buf.code_action() end)
+			vim.keymap.set("n","<leader>ca", function() vim.lsp.buf.code_action() end)
 			vim.keymap.set("n","<leader>vco", function() vim.lsp.buf.code_action({
                 filter = function(code_action)
                     if not code_action or not code_action.data then
@@ -47,8 +47,8 @@ require("lspconfig").cssls.setup(config())
 require("lspconfig").rust_analyzer.setup(config())
 require("lspconfig").bashls.setup(config())
 require("lspconfig").gopls.setup(config())
-require("lspconfig").gopls.setup(config())
 require("lspconfig").tailwindcss.setup(config())
+require("lspconfig").intelephense.setup(config())
 -- require("lspconfig").cpptools.setup(config())
 --
 -- require "daniel.lsp.null-ls"
